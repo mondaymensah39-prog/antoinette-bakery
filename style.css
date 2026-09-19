@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3b1f0e;
+}
+#hero {
+    background-color: #1a3a6b;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+#hero h1 { 
+    font-size: 48px;
+     margin-bottom: 10px; 
+    }
+#hero p { 
+    font-size: 18px; 
+    color: #d6e603; 
+}
+#about {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+#about h2 { 
+    font-size: 32px; 
+    color: #1a3a6b; 
+    margin-bottom: 15px; 
+}
+#about p { 
+    font-size: 18px; 
+    color: #444444; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+img {
+    width: 200px;
+    height: 250px;
+    border: 4px solid;
+    border-radius: 10px;
+}
+#services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff3e0;
+}
+#services h2 { 
+    font-size: 32px; 
+    margin-bottom: 30px; 
+    color: #1a3a6b; 
+}
+.service-card {
+    background-color: #ffffff;
+    border: 2px solid #1a3a6b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 250px;
+    font-size: 18px;
+}
+#contact {
+    background-color: #1a3a6b;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+#contact h2 { 
+    font-size: 32px; 
+    margin-bottom: 15px; 
+}
+footer {
+    background-color: #0d0d1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
