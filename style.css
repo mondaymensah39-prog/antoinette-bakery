@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -56,36 +62,63 @@ img {
     border: 4px solid;
     border-radius: 10px;
 }
+
 #services {
+    display: flex;
+    flex-direction: column;
     padding: 60px 20px;
     text-align: center;
+    align-items: center;
     background-color: #fff3e0;
+    gap: 20px;
+    max-width: 100%;
+    width: 100%;
 }
-#services h2 { 
+.services h2 { 
     font-size: 32px; 
-    margin-bottom: 30px; 
+    margin-bottom: 25px; 
     color: #1a3a6b; 
+    text-align: center;
+    padding: 20px;
+    width: 100%;
 }
+
+.offer-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+}
+
 .service-card {
     background-color: #d8f006;
     border: 2px solid #1a3a6b;
     border-radius: 10px;
-    padding: 10px;
+    overflow: hidden;
+    text-align: bottom;
+    padding-bottom: 10px;
     font-size: 18px;
-    width: 200px;
-    height: 200px;
-}
-.service-grid {
-    margin: 0 auto;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width:auto;
+    max-width: 300px;
+    height: auto;
     gap: 20px;
-    justify-content: center;
-    place-items: center;
-    max-width: 400px;
 }
 
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card h3 {
+    margin: 0;
+    font-size: 16px;
+    padding: 12px;
+    background-color: #f0f02a;
+}
 #gallery {
     background-color: peachpuff;
     color: #0d0d1a;
@@ -180,25 +213,28 @@ nav ul {
   gap: 1.5rem;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 780px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 900px) {
+@media (max-with: 900px) {
   .features-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    max-width: 900px;
+    max-width: 400px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
+
 .gallery-grid img {
     width: 200px;
     height: 200px;
@@ -207,3 +243,7 @@ nav ul {
     border: 2px solid white;
     max-width: 400px;
 }
+
+
+
+
